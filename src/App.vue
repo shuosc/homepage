@@ -1,27 +1,48 @@
 <template lang="pug">
   div#app
-    flat-surface-shader.shader(type="canvas", :light="{ambient: '#22bc9e', diffuse: '#2b7c6b'}")
-    .hero
-      .header 上海大学开源社区
-      .subheader Shanghai University Open Source Community
+    headroom(:upTolerance="0", :downTolerance="5", :offset="5")
+      .navbar
+        .container
+          img.navbar-logo(src="./assets/site-logo.png")
+          nav
+            a.item 关于
+            a.item 服务
+            a.item 活动
+            a.item 加入
+            a.item 联系
+    flat-surface-shader.shader(type="canvas", :light="{ambient: '#22bc9e', diffuse: '#2b7c6b', draw: false}")
+    header
+      .title 上海大学开源社区
+      .subtitle Shanghai University Open Source Community
       .main-buttons
-        el-button(type="primary",size="large") 加入我们
+        el-button(type="primary", size="large") 加入我们
         el-button.detailed-button(size="large") 了解更多
     section
 </template>
 
 <script>
+import {headroom} from 'vue-headroom'
+
 export default {
   name: 'app',
   data: function () {
     return {visible: false}
+  },
+  components: {
+    headroom
+  },
+  mounted: function () {
+    // Hack: trigger vue-headroom handler
+    window.scrollTo(window.scrollX, window.scrollY + 1)
   }
 }
 </script>
 
 <style lang="sass">
 @import 'assets/reset'
-@import 'assets/component'
+@import 'assets/common'
+@import 'assets/responsive'
+@import 'assets/nav'
 
 .shader
   position: fixed
@@ -29,7 +50,7 @@ export default {
   height: 100%
   z-index: -1
 
-.hero
+header
   background-color: rgba(0,0,0,0.6)
   height: 679px
   color: #ffffff
@@ -37,16 +58,14 @@ export default {
   align-items: center
   justify-content: center
   flex-direction: column
-  @extend .common-font
 
-.header
-  font-size: 3.5rem
+.title
+  font-size: 3.5em
   font-weight: 500
   line-height: 4.75rem
 
-.subheader
-  font-size: 1rem
-
+.subtitle
+  font-size: 1em
 
 .main-buttons
   margin: 30px 0
@@ -56,8 +75,8 @@ export default {
 .detailed-button:hover
   @extend .inverted-button:hover
 
-
 section
   background-color: white
   height: 1000px
+
 </style>

@@ -13,7 +13,8 @@
   "dependencies": {
     "element-ui": "^1.4.2",
     "vue": "^2.3.3",
-    "vue-flat-surface-shader": "^1.0.3"
+    "vue-flat-surface-shader": "^1.0.3",
+    "vue-headroom": "^0.6.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
