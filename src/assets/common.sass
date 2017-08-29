@@ -1,27 +1,27 @@
+@import "./color"
+
 .el-button
   transition: 0.3s
 .inverted-button
-  border: solid 1px #99A9BF
+  border: solid 1px $color-light-silver
   background-color: transparent
-  color: #FFFFFF
+  color: $color-white
 .inverted-button:hover
-  border-color: #FFFFFF
-  color: #FFFFFF
+  border-color: $color-white
+  color: $color-white
 
-// Tweak vue-headroom style
+// Hack: Tweak vue-headroom style
 .headroom
   position: fixed !important
 .headroom--top
   transform: translateY(-100%) !important
 .headroom--pinned
   transform: translateY(-100%) !important
-  opacity: 0
 .headroom--unpinned
   transform: translateY(0) !important
-  opacity: 1
 
 .container
   margin-left: auto
   margin-right: auto
-  
+
 

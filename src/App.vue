@@ -3,13 +3,15 @@
     headroom(:upTolerance="0", :downTolerance="5", :offset="5")
       .navbar
         .container
-          img.navbar-logo(src="./assets/site-logo.png")
+          img.logo(src="./assets/site-logo.png")
           nav
-            a.item 关于
+            a.item 介绍
             a.item 服务
-            a.item 活动
+            a.item 成员
+            a.item 合作
             a.item 加入
-            a.item 联系
+            a.item GITHUB
+            a.item WIKI
     flat-surface-shader.shader(type="canvas", :light="{ambient: '#22bc9e', diffuse: '#2b7c6b', draw: false}")
     header
       .title 上海大学开源社区
@@ -18,10 +20,50 @@
         el-button(type="primary", size="large") 加入我们
         el-button.detailed-button(size="large") 了解更多
     section
+      .container
+        .title 上海大学开源爱好者的交流平台
+        .hr
+        .quote In real open source, you have the right to control your own destiny. —— Linus Torvalds
+        el-row(:gutter="30")
+          el-col(:span="12")
+            .detail
+              iconbox
+              .content
+                .header 「自由、开放、平等」
+                .text 我们秉承自由软件运动之精神，弘扬黑客（Hacker）文化，传播先进的开源技术方案，鼓励源代码开放，培养自由平等的社区氛围，致力为世界开源事业作出贡献。
+          el-col(:span="12")
+            .detail
+              iconbox
+              .content
+                .header 公共社区服务
+                .text.
+                  我们面向全校师生举办定期的技术分享活动，并通过自建的平台服务进行线上弹幕直播。同时，我们每周会在微信公众号、博客等平台推送原创的翻译资料与技术文章。
+                  我们提供开源镜像、校内&amp;谷歌代理、代码托管、验证码识别等服务，为广大师生进行学术研究、技术研发给予各类支持。
+        el-row(:gutter="30")
+          el-col(:span="12")
+            .detail
+              iconbox
+              .content
+                .header 技术交流社群
+                .text.
+                  社区自 2010 年成立以来，已历经六届。这里有就职于微软、摩根士丹利、百度、腾讯、阿里等企业的已毕业成员，有正在清北交复浙乃至海外攻读硕博学位的高材生，
+                  还有知名开源项目的贡献者。社区中校内同学与这些往届成员保持密切的联系，开展各式各样的技术交流， 衍生出前端技术、Python、Java 等专题兴趣小组。
+                  良好的技术交流氛围，是社区的宝贵财富，也吸引校内的技术爱好者参与到社区的活动中来。
+          el-col(:span="12")
+            .detail
+              iconbox
+              .content
+                .header 线下活动
+                .text.
+                  除了技术分享，我们还会定期举办「Geek Party」茶话会，促进社区成员之间交流。同时，我们与校外企业、技术组织维系长期合作关系，
+                  不定期组织志愿者参加大型开源及技术专题活动，帮助同学们获知业界技术动向，了解开源事业发展。
+    section
+      .container
 </template>
 
 <script>
 import {headroom} from 'vue-headroom'
+import iconbox from './components/Iconbox.vue'
 
 export default {
   name: 'app',
@@ -29,7 +71,8 @@ export default {
     return {visible: false}
   },
   components: {
-    headroom
+    headroom,
+    iconbox
   },
   mounted: function () {
     // Hack: trigger vue-headroom handler
@@ -41,8 +84,10 @@ export default {
 <style lang="sass">
 @import 'assets/reset'
 @import 'assets/common'
+@import 'assets/color'
 @import 'assets/responsive'
 @import 'assets/nav'
+@import 'assets/section'
 
 .shader
   position: fixed
@@ -59,12 +104,12 @@ header
   justify-content: center
   flex-direction: column
 
-.title
+header > .title
   font-size: 3.5em
   font-weight: 500
   line-height: 4.75rem
 
-.subtitle
+header > .subtitle
   font-size: 1em
 
 .main-buttons
@@ -75,8 +120,5 @@ header
 .detailed-button:hover
   @extend .inverted-button:hover
 
-section
-  background-color: white
-  height: 1000px
 
 </style>
