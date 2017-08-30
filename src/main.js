@@ -6,11 +6,14 @@ import ElementUI from 'element-ui'
 import '../theme/index.css'
 import FlatSurfaceShader from 'vue-flat-surface-shader'
 import headroom from 'vue-headroom'
+import ScrollSpy from 'vue2-scrollspy'
+require('../node_modules/font-awesome/css/font-awesome.css')
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(FlatSurfaceShader)
 Vue.use(headroom)
+Vue.use(ScrollSpy)
 
 /* eslint-disable no-new */
 new Vue({

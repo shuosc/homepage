@@ -1,24 +1,24 @@
 <template lang="pug">
-  div#app
+  div#app(v-scroll-spy="scrollPos")
     headroom(:upTolerance="0", :downTolerance="5", :offset="5")
       .navbar
         .container
           img.logo(src="./assets/site-logo.png")
           nav
-            a.item 介绍
-            a.item 服务
-            a.item 成员
-            a.item 合作
-            a.item 加入
-            a.item GITHUB
-            a.item WIKI
+            a.item(@click="$scrollTo(3)") 介绍
+            a.item(@click="$scrollTo(4)") 服务
+            a.item(@click="$scrollTo(5)") 成员
+            a.item(@click="$scrollTo(6)") 合作
+            a.item(@click="$scrollTo(7)") 加入
+            a.item(href="https://github.com/shuopensourcecommunity") GITHUB
+            a.item(href="https://wiki.shuosc.org/") WIKI
     flat-surface-shader.shader(type="canvas", :light="{ambient: '#22bc9e', diffuse: '#2b7c6b', draw: false}")
     header
       .title 上海大学开源社区
       .subtitle Shanghai University Open Source Community
       .main-buttons
-        el-button(type="primary", size="large") 加入我们
-        el-button.detailed-button(size="large") 了解更多
+        el-button(type="primary", size="large", @click="$scrollTo(7)") 加入我们
+        el-button.detailed-button(size="large", @click="$scrollTo(3)") 了解更多
     section
       .container
         .title 上海大学开源爱好者的交流平台
@@ -48,7 +48,7 @@
                 .text.
                   社区自 2010 年成立以来，已历经六届。这里有就职于微软、摩根士丹利、百度、腾讯、阿里等企业的已毕业成员，有正在清北交复浙乃至海外攻读硕博学位的高材生，
                   还有知名开源项目的贡献者。社区中校内同学与这些往届成员保持密切的联系，开展各式各样的技术交流， 衍生出前端技术、Python、Java 等专题兴趣小组。
-                  良好的技术交流氛围，是社区的宝贵财富，也吸引校内的技术爱好者参与到社区的活动中来。
+                  这样良好的技术交流氛围，是社区宝贵的财富，也吸引了校内各类的技术爱好者们参与到社区活动与建设中来。
           el-col(:span="12")
             .detail
               iconbox
@@ -58,7 +58,69 @@
                   除了技术分享，我们还会定期举办「Geek Party」茶话会，促进社区成员之间交流。同时，我们与校外企业、技术组织维系长期合作关系，
                   不定期组织志愿者参加大型开源及技术专题活动，帮助同学们获知业界技术动向，了解开源事业发展。
     section
+      .container.service
+        .title.text-center 社区服务
+        .hr.element-center
+        el-row.text-center(:gutter="30")
+          el-col(:span="8")
+            i.fa.fa-tablet.badge
+            .header 上大助手
+            .text.
+              开源的校园门户系统，实现可定制的校园信息接口集中化服务。
+              目前支持排课助手、校园安全地图、晨跑课外活动查询、成绩查询等诸多功能。
+            .more
+              a(href="https://www.shuhelper.cn/") 查看详细
+          el-col(:span="8")
+            i.fa.fa-database.badge
+            .header 开源镜像站
+            .text.
+              一个以普及开源软件，方便校内用户高校访问开源项目资源的非盈利计划。
+              提供 Ubuntu、CentOS、Arch、 OpenSUSE、Apache 等项目源的镜像，
+              为校内开源技术爱好者提供高速的源服务。
+            .more
+              a(href="https://mirrors.shuosc.org") 查看详细
+          el-col(:span="8")
+            i.fa.fa-flask.badge
+            .header 实验场
+            .text #[a(href="http://tv.shuosc.org") 弹幕直播]
+            .text #[a(href="https://git.shuosc.org") 代码托管]
+            .text #[a(href="https://g.shuosc.org") 谷歌反向代理]
+            .text #[a(href="https://github.com/shuopensourcecommunity/anti-captcha.shuosc.org") 验证码识别]
+    section
+      .container.member
+        .title.text-center 社区成员
+        .hr.element-center
+        el-carousel(type="card" height="400px")
+          el-carousel-item(v-for="item in 6", :key="item")
+            h3 {{item}}
+    section
       .container
+        .title.text-center 合作
+        .hr.element-center
+        .sponsor
+          a(href="http://chinagdg.org/p/gdg-shanghai/")
+            img(width="225",height="75",src="./assets/gdg-logo.png")
+          a(href="https://www.synyi.com")
+            img(width="375",height="75",src="./assets/synyi-logo.png")
+          a(href="https://nita.shu.edu.cn")
+            img(width="190",height="75",src="./assets/nita-logo.png")
+    section.joinus
+      .container.text-center
+        .title 加入
+        .hr.element-center
+        .text 如果你对计算机技术充满兴趣，或是愿意参与到我们的活动中来，欢迎加入我们！
+        .text 17级QQ群：146685225 （推荐新加入同学加入）
+        .text QQ主群：24061199
+        .text
+          a(href="https://t.me/joinchat/ErK1eQ6s9-axpVr75Oiwww") #[i.fa.fa-telegram] Telegram
+        .text.wechat 微信公众号
+        img(src="./assets/wx-qrcode.png")
+        .text 详细的加入说明以及招募信息，请#[a(href="https://wiki.shuosc.org/about") 参见]
+        .text 若有任何问题或建议，也可直接#[a(href="emailto:contact@shuosc.org") 联系我们]
+    footer
+      .text ©2017 SHU Open Source Community
+      .text Made with #[i.fa.fa-heart]
+
 </template>
 
 <script>
@@ -68,7 +130,7 @@ import iconbox from './components/Iconbox.vue'
 export default {
   name: 'app',
   data: function () {
-    return {visible: false}
+    return {scrollPos: -1}
   },
   components: {
     headroom,
@@ -88,6 +150,7 @@ export default {
 @import 'assets/responsive'
 @import 'assets/nav'
 @import 'assets/section'
+@import 'assets/member'
 
 .shader
   position: fixed
@@ -115,10 +178,19 @@ header > .subtitle
 .main-buttons
   margin: 30px 0
 
-.detailed-button
-  @extend .inverted-button
-.detailed-button:hover
-  @extend .inverted-button:hover
-
+footer
+  padding-top: 20px
+  padding-bottom: 10px
+  text-align: center
+  background-color: rgba(0,0,0,0.6)
+  .logo
+    margin-top: 15px
+    margin-bottom: 15px
+    width: 75px
+    height: 75px
+  .text
+    line-height: 1.2em
+    font-size: 0.5em
+    color: rgba(255,255,255,0.1)
 
 </style>

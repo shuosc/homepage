@@ -43,6 +43,6 @@
     border-radius: 5px
     text-align: center
     flex-shrink: 0
-  i
+  .box i
     color: $color-white
 </style>

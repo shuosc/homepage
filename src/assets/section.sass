@@ -3,7 +3,7 @@
 section
   background-color: $color-dark-white
   padding-top: 50px
-  padding-bottom: 100px
+  padding-bottom: 50px
 
   .title
     color: $color-black
@@ -27,6 +27,18 @@ section
     display: flex
     margin-top: 35px
 
+  .text
+    color: $color-extra-light-dark
+    line-height: 1.8em
+    a
+      color: $color-primary
+      font-weight: 500
+      transition: 0.3s
+      text-decoration: none
+      cursor: pointer
+    a:hover
+      color: $color-extra-light-dark
+
   .content
     padding-left: 20px
     .header
@@ -35,6 +47,51 @@ section
       font-size: 1em
       line-height: 1.5em
       margin-bottom: 8px
-    .text
+
+  .service
+    .badge
+      font-size: 50px
+      color: $color-primary
+    .hr
+      margin-bottom: 40px
+    .header
+      font-size: 1.2em
+      line-height: 2.2em
+      margin-top: 10px
+    li
+      list-style-type: none
+    a
+      color: $color-primary
+      font-weight: 500
+      transition: 0.3s
+      text-decoration: none
+    a:hover
       color: $color-extra-light-dark
-      line-height: 1.8em
+    .more
+      margin-top: 10px
+
+  .sponsor
+    margin-top: 40px
+    margin-bottom: 100px
+    display: flex
+    justify-content: center
+    img
+      margin-right: 40px
+
+.joinus
+  background-color: rgba(0,0,0,0.6)
+  .title
+    color: $color-white
+  .text
+    color: $color-white
+    font-weight: 500
+  a:hover
+    color: $color-white !important
+  img
+    margin-top: 10px
+    margin-bottom: 20px
+    width: 200px
+    height: 200px
+    border-radius: 5px
+  .wechat
+    margin-top: 20px
