@@ -3,7 +3,7 @@
     headroom(:upTolerance="0", :downTolerance="5", :offset="5")
       .navbar
         .container
-          img.logo(src="./assets/site-logo.png")
+          img.logo(src="./assets/images/site-logo.png")
           nav
             a.item(@click="$scrollTo(3)") 介绍
             a.item(@click="$scrollTo(4)") 服务
@@ -99,11 +99,11 @@
         .hr.element-center
         .sponsor
           a(href="http://chinagdg.org/p/gdg-shanghai/")
-            img(width="225",height="75",src="./assets/gdg-logo.png")
+            img(width="225",height="75",src="./assets/images/gdg-logo.png")
           a(href="https://www.synyi.com")
-            img(width="375",height="75",src="./assets/synyi-logo.png")
+            img(width="375",height="75",src="./assets/images/synyi-logo.png")
           a(href="https://nita.shu.edu.cn")
-            img(width="190",height="75",src="./assets/nita-logo.png")
+            img(width="190",height="75",src="./assets/images/nita-logo.png")
     section.joinus
       .container.text-center
         .title 加入
@@ -114,7 +114,7 @@
         .text
           a(href="https://t.me/joinchat/ErK1eQ6s9-axpVr75Oiwww") #[i.fa.fa-telegram] Telegram
         .text.wechat 微信公众号
-        img(src="./assets/wx-qrcode.png")
+        img(src="./assets/images/wx-qrcode.png")
         .text 详细的加入说明以及招募信息，请#[a(href="https://wiki.shuosc.org/about") 参见]
         .text 若有任何问题或建议，也可直接#[a(href="emailto:contact@shuosc.org") 联系我们]
     footer
@@ -130,7 +130,14 @@ import iconbox from './components/Iconbox.vue'
 export default {
   name: 'app',
   data: function () {
-    return {scrollPos: -1}
+    return {
+      scrollPos: -1,
+      members: [
+        {name: 'cosformula', title: '现社区负责人', avatar: 'https://avatars3.githubusercontent.com/u/18232501?v=4&s=460'},
+        {name: 'eric wang', title: '运营 & 宣传', avatar: 'https://avatars1.githubusercontent.com/u/24954432?v=4&s=460'},
+        {name: 'diggerdu', title: '讲师 & 技术研发', avatar: 'https://avatars1.githubusercontent.com/u/5636045?v=4&s=460'}
+      ]
+    }
   },
   components: {
     headroom,
@@ -144,13 +151,13 @@ export default {
 </script>
 
 <style lang="sass">
-@import 'assets/reset'
-@import 'assets/common'
-@import 'assets/color'
-@import 'assets/responsive'
-@import 'assets/nav'
-@import 'assets/section'
-@import 'assets/member'
+@import 'assets/sass/reset'
+@import 'assets/sass/common'
+@import 'assets/sass/color'
+@import 'assets/sass/responsive'
+@import 'assets/sass/nav'
+@import 'assets/sass/section'
+@import 'assets/sass/member'
 
 .shader
   position: fixed

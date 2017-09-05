@@ -37,7 +37,7 @@
 </script>
 
 <style lang="sass">
-  @import '../assets/color'
+  @import '../assets/sass/color'
   .box
     background-color: $color-primary
     border-radius: 5px
