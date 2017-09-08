@@ -90,9 +90,13 @@
       .container.member
         .title.text-center 社区成员
         .hr.element-center
-        el-carousel(type="card" height="400px")
-          el-carousel-item(v-for="item in 6", :key="item")
-            h3 {{item}}
+        el-carousel(type="card" height="400px", :interval="6000")
+          el-carousel-item.card(v-for="member in members")
+            img.avatar(:src="member.avatar")
+            .name {{member.name}}
+            .title {{member.title}}
+            ul(v-for="skill in member.skills")
+              li #[i.el-icon-arrow-right] {{skill}}
     section
       .container
         .title.text-center 合作
@@ -126,6 +130,12 @@
 <script>
 import {headroom} from 'vue-headroom'
 import iconbox from './components/Iconbox.vue'
+import EricwangAvatar from './assets/images/avatar-ericwang.jpg'
+import CosformulaAvatar from './assets/images/avatar-cosformula.png'
+import DiggerduAvatar from './assets/images/avatar-diggerdu.jpg'
+import NpaAvatar from './assets/images/avatar-npa.jpg'
+import ZhongerAvatar from './assets/images/avatar-zhonger.jpg'
+import YisaerAvatar from './assets/images/avatar-yisaer.jpg'
 
 export default {
   name: 'app',
@@ -133,9 +143,12 @@ export default {
     return {
       scrollPos: -1,
       members: [
-        {name: 'cosformula', title: '现社区负责人', avatar: 'https://avatars3.githubusercontent.com/u/18232501?v=4&s=460'},
-        {name: 'eric wang', title: '运营 & 宣传', avatar: 'https://avatars1.githubusercontent.com/u/24954432?v=4&s=460'},
-        {name: 'diggerdu', title: '讲师 & 技术研发', avatar: 'https://avatars1.githubusercontent.com/u/5636045?v=4&s=460'}
+        {name: 'Cosformula', title: '现社区负责人', avatar: CosformulaAvatar, skills: ['SHU Helper', 'Web Development', 'Python', 'Javascript']},
+        {name: 'Eric Wang', title: '运营 & 宣传', avatar: EricwangAvatar, skills: ['Machine Learning', 'Python']},
+        {name: 'Diggerdu', title: '讲师 & 技术研发', avatar: DiggerduAvatar, skills: ['SHUOSC Monitor', 'Deep Learning', 'Tensorflow', 'Python']},
+        {name: 'Npa', title: '技术研发', avatar: NpaAvatar, skills: ['SHU Anti-captcha', 'Deep Learning', 'Web Development', 'Python']},
+        {name: 'Zhonger', title: '技术研发 & 服务器维护', avatar: ZhongerAvatar, skills: ['SHUOSC Mirrors', 'Javascript', 'Ops']},
+        {name: 'Yisaer', title: '讲师 & 技术研发', avatar: YisaerAvatar, skills: ['Java', 'C / C++', 'System Programming']}
       ]
     }
   },
@@ -158,6 +171,7 @@ export default {
 @import 'assets/sass/nav'
 @import 'assets/sass/section'
 @import 'assets/sass/member'
+@import 'assets/sass/card'
 
 .shader
   position: fixed
@@ -199,5 +213,4 @@ footer
     line-height: 1.2em
     font-size: 0.5em
     color: rgba(255,255,255,0.1)
-
 </style>
