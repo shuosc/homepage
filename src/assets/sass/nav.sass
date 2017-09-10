@@ -8,12 +8,29 @@
   .container
     display: flex
     justify-content: space-between
+    align-items: flex-start
   .logo
-    width: 50px
-    height: 50px
-
+    flex: 1 0 auto
+    img
+      width: 50px
+      height: 50px
+  .nav-button
+    border-radius: 5px
+    border: solid 1px $color-common-border
+    text-align: center
+    padding: 0px 8px
+    font-size: 2em
+    color: $color-extra-light-dark
+    cursor: pointer
+    transition: 0.3s
+    margin-top: 10px
+  .nav-button:hover
+    color: $color-primary
+  .nav-button.active
+    color: $color-primary
 nav
   line-height: 50px
+  transition: max-height 1.0s
   .item
     display: inline-block
     margin-right: 35px

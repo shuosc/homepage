@@ -1,3 +1,92 @@
+@import './color'
+@media (max-width: 925px)
+  section
+    .sponsor
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      img
+        margin-bottom: 50px
+@media (max-width: 675px)
+  .navbar
+    .logo
+      margin-bottom: 20px
+    .container
+      flex-wrap: wrap
+    padding-bottom: 0
+    padding-top: 10px
+  nav
+    flex: 0 1 100%
+    margin-bottom: 0
+    max-height: 0
+    overflow: hidden
+    a
+      text-align: center
+      border-top: 1px solid $color-extra-light-gray
+    .item
+      display: block
+      margin-right: 0
+  nav.active
+    max-height: 700px
+  header > .title
+    font-size: 3em
+  section
+    .title
+      font-size: 1.5em
+@media (max-width: 475px)
+  .navbar
+    .nav-button
+      margin-top: 5px
+    .logo
+      img
+        margin-top: 3px
+        width: 35px
+        height: 35px
+  header > .title
+    font-size: 2.7em
+  .member
+    width: 250px !important
+    .el-carousel__container
+      overflow: hidden
+  .card
+    margin-top: 0
+
+@media (max-width: 375px)
+  header > .title
+    font-size: 2.5em
+  section
+    .title
+      font-size: 1.2em
+    .quote
+      font-size: 0.8em
+  body
+    font-size: 0.8em
+
+@media (min-width: 275px)
+  .container
+    width: 275px
+  .navbar
+    .logo
+      margin-bottom: 10px
+    .nav-button
+      font-size: 1.5em
+
+@media (min-width: 375px)
+  .container
+    width: 350px
+@media (min-width: 475px)
+  .container
+    width: 450px
+@media (min-width: 575px)
+  .container
+    width: 550px
+@media (min-width: 675px)
+  .container
+    width: 650px
+  .navbar
+    .nav-button
+      display: none
+      visibility: hidden
 @media (min-width: 768px)
   .container
     width: 750px
