@@ -184,6 +184,8 @@ export default {
   mounted: function () {
     // Hack: trigger vue-headroom handler
     window.scrollTo(window.scrollX, window.scrollY + 1)
+  },
+  created: function () {
     window.addEventListener('resize', this.resize)
     this.resize()
   },
