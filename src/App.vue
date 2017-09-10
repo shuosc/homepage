@@ -94,7 +94,7 @@
         .title.text-center 社区成员
         .hr.element-center
         el-carousel(:type="carouselType" height="400px", :interval="6000")
-          el-carousel-item.card(v-for="member in members")
+          el-carousel-item.card(v-for="member in members", :key="member.name")
             img.avatar(:src="member.avatar")
             .name {{member.name}}
             .title {{member.title}}
