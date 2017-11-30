@@ -85,7 +85,6 @@
           el-col(:sm="8", :xs="24")
             i.fa.fa-flask.badge
             .header 实验场
-            .text #[a(href="http://tv.shuosc.org") 弹幕直播]
             .text #[a(href="https://git.shuosc.org") 代码托管]
             .text #[a(href="https://g.shuosc.org") 谷歌反向代理]
             .text #[a(href="https://github.com/shuopensourcecommunity/anti-captcha.shuosc.org") 验证码识别]
@@ -174,7 +173,6 @@ export default {
         this.carouselType = ''
         this.shaderMeshOptions = {segments: 4, slices: 4, width: 1.8, height: 1.8}
       }
-      // 768
     }
   },
   components: {
