@@ -15,6 +15,7 @@
             a.item(@click="$scrollTo(7)") 加入
             a.item(href="https://github.com/shuopensourcecommunity") GITHUB
             a.item(href="https://wiki.shuosc.org/") WIKI
+            a.item(href="https://blog.shuosc.org/") BLOG
     flat-surface-shader.shader(type="canvas", :light="shaderLightOptions", :mesh="shaderMeshOptions")
     header
       .title 上海大学开源社区
@@ -85,8 +86,10 @@
           el-col(:sm="8", :xs="24")
             i.fa.fa-flask.badge
             .header 实验场
+            .text #[a(href="http://bbs.shuosc.org") 社区论坛]
             .text #[a(href="https://git.shuosc.org") 代码托管]
-            .text #[a(href="https://g.shuosc.org") 谷歌反向代理]
+            .text #[a(href="https://g.shuosc.org") 搜索反向代理]
+            .text #[a(href="https://shuer.link") SHUER.LINK]
             .text #[a(href="https://github.com/shuopensourcecommunity/anti-captcha.shuosc.org") 验证码识别]
     section
       .container.member
@@ -110,6 +113,8 @@
             img(width="250",height="50",src="./assets/images/synyi-logo.png")
           a(href="https://nita.shu.edu.cn")
             img(width="190",height="75",src="./assets/images/nita-logo.png")
+          a(href="https://geekpie.org")
+            img(width="225", height="58",src="./assets/images/geekpie-logo.png")
     section.joinus
       .container.text-center
         .title 加入
