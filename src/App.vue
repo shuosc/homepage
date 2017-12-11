@@ -88,7 +88,7 @@
             .header 实验场
             .text #[a(href="http://bbs.shuosc.org") 社区论坛]
             .text #[a(href="https://git.shuosc.org") 代码托管]
-            .text #[a(href="https://g.shuosc.org") 搜索反向代理]
+            .text #[a(href="https://g6.shuosc.org") 搜索反向代理]
             .text #[a(href="https://shuer.link") SHUER.LINK]
             .text #[a(href="https://github.com/shuopensourcecommunity/anti-captcha.shuosc.org") 验证码识别]
     section
