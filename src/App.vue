@@ -114,7 +114,7 @@
           a(href="https://nita.shu.edu.cn")
             img(width="190",height="75",src="./assets/images/nita-logo.png")
           a(href="https://geekpie.org")
-            img(width="225", height="58",src="./assets/images/geekpie-logo.png")
+            img(width="250", height="54",src="./assets/images/geekpie-logo.png")
     section.joinus
       .container.text-center
         .title 加入
