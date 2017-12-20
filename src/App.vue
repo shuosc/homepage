@@ -160,8 +160,8 @@ export default {
         {name: 'Diggerdu', title: '讲师 & 技术研发', avatar: DiggerduAvatar, skills: ['SHUOSC Monitor', 'Deep Learning', 'Tensorflow', 'Python']},
         {name: 'Npa', title: '技术研发', avatar: NpaAvatar, skills: ['SHU Anti-captcha', 'Deep Learning', 'Web Development', 'Python']},
         {name: 'Zhonger', title: '技术研发 & 服务器维护', avatar: ZhongerAvatar, skills: ['SHUOSC Mirrors', 'Javascript', 'Ops']},
-        {name: 'Yisaer', title: '讲师 & 技术研发', avatar: YisaerAvatar, skills: ['Java', 'C / C++', 'System Programming']}
-        {name: 'LongFangSong', title: '技术研发', avatar: LongFangSongAvatar, skills: ['Opencv Doc-cn', 'Python', 'C / C++', 'System Programming']}      
+        {name: 'Yisaer', title: '讲师 & 技术研发', avatar: YisaerAvatar, skills: ['Java', 'C / C++', 'System Programming']},
+        {name: 'LongFangSong', title: '技术研发', avatar: LongFangSongAvatar, skills: ['Opencv Doc-cn', 'Python', 'C / C++', 'System Programming']},
         {name: 'Adrian', title: '讲师 & 技术研发', avatar: AdrianDuanAvatar, skills: ['SHUer Link', 'Javascript', 'Web Development']}
       ]
     }
