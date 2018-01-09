@@ -144,7 +144,7 @@ import DiggerduAvatar from './assets/images/avatar-diggerdu.jpg'
 import NpaAvatar from './assets/images/avatar-npa.jpg'
 import ZhongerAvatar from './assets/images/avatar-zhonger.jpg'
 import YisaerAvatar from './assets/images/avatar-yisaer.jpg'
-
+import KIAvatar from './assets/images/avatar-ki.jpg'
 export default {
   name: 'app',
   data: function () {
@@ -162,7 +162,8 @@ export default {
         {name: 'Zhonger', title: '技术研发 & 服务器维护', avatar: ZhongerAvatar, skills: ['SHUOSC Mirrors', 'Javascript', 'Ops']},
         {name: 'Yisaer', title: '讲师 & 技术研发', avatar: YisaerAvatar, skills: ['Java', 'C / C++', 'System Programming']},
         {name: 'LongFangSong', title: '技术研发', avatar: LongFangSongAvatar, skills: ['Opencv Doc-cn', 'Python', 'C / C++', 'System Programming']},
-        {name: 'Adrian', title: '讲师 & 技术研发', avatar: AdrianDuanAvatar, skills: ['SHUer Link', 'Javascript', 'Web Development']}
+        {name: 'Adrian', title: '讲师 & 技术研发', avatar: AdrianDuanAvatar, skills: ['SHUer Link', 'Javascript', 'Web Development']},
+        {name: 'Kastnerorz&Iris', title: '运营 & 技术研发', avatar: KIAvatar, skills: ['Web Development', 'Java', 'Deep Learning']}
       ]
     }
   },
