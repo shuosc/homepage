@@ -121,7 +121,7 @@
         .hr.element-center
         .text 如果你对计算机技术充满兴趣，或是愿意参与到我们的活动中来，欢迎加入我们！
         .text 17级QQ群：146685225 （推荐新同学加入）
-        .text QQ主群：24061199
+        .text QQ主群：24061199 （加群请简单备注说明来历）
         .text
           a(href="https://t.me/joinchat/ErK1eQ6s9-axpVr75Oiwww") #[i.fa.fa-telegram] Telegram
         .text.wechat 微信公众号
