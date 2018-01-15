@@ -129,7 +129,7 @@
         .text 详细的加入说明以及招募信息，请#[a(href="https://wiki.shuosc.org/about") 参见]
         .text 若有任何问题或建议，也可直接#[a(href="mailto:contact@shuosc.org") 联系我们]
     footer
-      .text ©2017 SHU Open Source Community
+      .text= `©${new Date().getFullYear()} SHU Open Source Community`
       .text Made with #[i.fa.fa-heart]
 </template>
 
