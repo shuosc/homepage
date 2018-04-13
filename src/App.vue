@@ -116,7 +116,7 @@
           a(href="https://geekpie.org")
             img(width="250", height="54",src="./assets/images/geekpie-logo.png")
           a(href="https://lug.ustc.edu.cn")
-            img(width="250", height="54",src="./assets/images/lug-ustc-logo.png")
+            img(height="75",src="./assets/images/lug-ustc-logo.png")
     section.joinus
       .container.text-center
         .title 加入
