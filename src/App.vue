@@ -86,9 +86,9 @@
           el-col(:sm="8", :xs="24")
             i.fa.fa-flask.badge
             .header 实验场
-            .text #[a(href="http://bbs.shuosc.org") 社区论坛]
+            //- .text #[a(href="http://bbs.shuosc.org") 社区论坛]
             .text #[a(href="https://git.shuosc.org") 代码托管]
-            .text #[a(href="https://g6.shuosc.org") 搜索反向代理]
+            //- .text #[a(href="https://g6.shuosc.org") 搜索反向代理]
             .text #[a(href="https://shuer.link") SHUER.LINK]
             .text #[a(href="https://github.com/shuopensourcecommunity/anti-captcha.shuosc.org") 验证码识别]
     section
@@ -115,12 +115,14 @@
             img(width="190",height="75",src="./assets/images/nita-logo.png")
           a(href="https://geekpie.org")
             img(width="250", height="54",src="./assets/images/geekpie-logo.png")
+          a(href="https://lug.ustc.edu.cn")
+            img(width="250", height="54",src="./assets/images/lug-ustc-logo.png")
     section.joinus
       .container.text-center
         .title 加入
         .hr.element-center
         .text 如果你对计算机技术充满兴趣，或是愿意参与到我们的活动中来，欢迎加入我们！
-        .text 17级QQ群：146685225 （推荐新同学加入）
+        //- .text 17级QQ群：146685225 （推荐新同学加入）
         .text QQ主群：24061199 （加群请简单备注说明来历）
         .text
           a(href="https://t.me/joinchat/ErK1eQ6s9-axpVr75Oiwww") #[i.fa.fa-telegram] Telegram
