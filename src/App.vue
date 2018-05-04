@@ -14,8 +14,8 @@
             a.item(@click="$scrollTo(6)") 合作
             a.item(@click="$scrollTo(7)") 加入
             a.item(href="https://github.com/shuopensourcecommunity") GITHUB
-            a.item(href="https://wiki.shuosc.org/") WIKI
-            a.item(href="https://blog.shuosc.org/") BLOG
+            a.item(href="https://osc.shu.edu.cn/wiki/") WIKI
+            a.item(href="https://osc.shu.edu.cn/blog/") BLOG
     flat-surface-shader.shader(type="canvas", :light="shaderLightOptions", :mesh="shaderMeshOptions")
     header
       .title 上海大学开源社区
@@ -82,7 +82,7 @@
               提供 Ubuntu、CentOS、Arch、 OpenSUSE、Apache 等项目源的镜像，
               为校内开源技术爱好者提供高速的源服务。
             .more
-              a(href="https://mirrors.shuosc.org") 查看详细
+              a(href="https://mirrors.shu.edu.cn/") 查看详细
           el-col(:sm="8", :xs="24")
             i.fa.fa-flask.badge
             .header 实验场
