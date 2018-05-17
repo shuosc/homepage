@@ -113,10 +113,13 @@
             img(width="250",height="50",src="./assets/images/synyi-logo.png")
           a(href="https://nita.shu.edu.cn")
             img(width="190",height="75",src="./assets/images/nita-logo.png")
+        .sponsor
           a(href="https://geekpie.org")
             img(width="250", height="54",src="./assets/images/geekpie-logo.png")
           a(href="https://lug.ustc.edu.cn")
             img(height="75",src="./assets/images/lug-ustc-logo.png")
+          a(href="https://soscon.top")
+            img(height="120",src="./assets/images/soscon-logo.png")
     section.joinus
       .container.text-center
         .title 加入
