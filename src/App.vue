@@ -131,7 +131,7 @@
           a(href="https://t.me/joinchat/ErK1eQ6s9-axpVr75Oiwww") #[i.fa.fa-telegram] Telegram
         .text.wechat 微信公众号
         img(src="./assets/images/wx-qrcode.png")
-        .text 详细的加入说明以及招募信息，请#[a(href="https://wiki.shuosc.org/about") 参见]
+        .text 详细的加入说明以及招募信息，请#[a(href="https://osc.shu.edu.cn/wiki/about") 参见]
         .text 若有任何问题或建议，也可直接#[a(href="mailto:contact@shuosc.org") 联系我们]
     footer
       .text= `©${new Date().getFullYear()} SHU Open Source Community`
