@@ -65,8 +65,8 @@ module.exports = {
     addgrouprequire: 'Please add a simple note to explain the origin ',
     wechat: 'Wechat',
     info: 'Detailed introduction and recruitment information, please ',
-    see: 'see',
+    see: 'see here',
     question: 'If you have any advice',
-    contract: 'contract us'
+    contract: ' contract us'
   }
 }
