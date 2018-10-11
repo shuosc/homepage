@@ -8,7 +8,7 @@ module.exports = {
   },
   header: {
     title: 'Shanghai University Open Source Community',
-    subtitle: '上海大学开源社区'
+    subtitle: ''
   },
   mainButtons: {
     joinUs: 'Join us',
