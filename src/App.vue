@@ -81,10 +81,13 @@
             i.fa.fa-flask.badge
             .header {{$t("service.lab.header")}}
             //- .text #[a(href="http://bbs.shuosc.org") 社区论坛]
-            .text #[a(href="https://git.shuosc.org") {{$t("service.lab.git")}}]
+            //.text #[a(href="https://git.shuosc.org") {{$t("service.lab.git")}}]
             //- .text #[a(href="https://g6.shuosc.org") 搜索反向代理]
             .text #[a(href="https://shuer.link") SHUER.LINK]
             .text #[a(href="https://github.com/shuopensourcecommunity/anti-captcha.shuosc.org") {{$t("service.lab.anticaptcha")}}]
+            .text #[a(href="https://mirrors.shu.edu.cn/help/dns.html") DNS]
+            .text #[a(href="https://mirrors.shu.edu.cn/help/docker.html") Docker Hub加速]
+            .text #[a(href="https://mirrors.shu.edu.cn/shuhelper") 上大助手校内镜像]
     section
       .container.member
         .title.text-center {{$t("members.title")}}
