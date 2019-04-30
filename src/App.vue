@@ -13,7 +13,7 @@
             a.item(@click="$scrollTo(5)") {{$t("nav.member")}}
             a.item(@click="$scrollTo(6)") {{$t("nav.collaborator")}}
             a.item(@click="$scrollTo(7)") {{$t("nav.join")}}
-            a.item(href="https://github.com/shuopensourcecommunity") GITHUB
+            a.item(href="https://github.com/shuosc") GITHUB
             a.item(href="https://osc.shu.edu.cn/wiki/") WIKI
             a.item(href="https://osc.shu.edu.cn/blog/") BLOG
     flat-surface-shader.shader(type="canvas", :light="shaderLightOptions", :mesh="shaderMeshOptions")
@@ -84,7 +84,7 @@
             //.text #[a(href="https://git.shuosc.org") {{$t("service.lab.git")}}]
             //- .text #[a(href="https://g6.shuosc.org") 搜索反向代理]
             .text #[a(href="https://shuer.link") SHUER.LINK]
-            .text #[a(href="https://github.com/shuopensourcecommunity/anti-captcha.shuosc.org") {{$t("service.lab.anticaptcha")}}]
+            .text #[a(href="https://github.com/shuosc/anti-captcha.shuosc.org") {{$t("service.lab.anticaptcha")}}]
             .text #[a(href="https://mirrors.shu.edu.cn/help/dns.html") DNS]
             .text #[a(href="https://mirrors.shu.edu.cn/help/docker.html") Docker Hub加速]
             .text #[a(href="https://mirrors.shu.edu.cn/shuhelper") 上大助手校内镜像]
