@@ -1,4 +1,4 @@
 # These rules will change if you change your site’s custom domains or HTTPS settings
 
 # Redirect default Netlify subdomain to primary domain
-https://shuosc.netlify.com/* https://www.shuosc.org/:splat 301!
+https://shuosc.netlify.com/* https://www.cloud.shuosc.com/:splat 301!
