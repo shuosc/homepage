@@ -14,8 +14,6 @@
             a.item(@click="$scrollTo(6)") {{$t("nav.collaborator")}}
             a.item(@click="$scrollTo(7)") {{$t("nav.join")}}
             a.item(href="https://github.com/shuosc") GITHUB
-            a.item(href="https://osc.shu.edu.cn/wiki/") WIKI
-            a.item(href="https://osc.shu.edu.cn/blog/") BLOG
     flat-surface-shader.shader(type="canvas", :light="shaderLightOptions", :mesh="shaderMeshOptions")
     header
       .title {{$t("header.title")}}
@@ -63,31 +61,18 @@
         .title.text-center {{$t("service.title")}}
         .hr.element-center
         el-row.text-center(:gutter="30")
-          el-col(:sm="8", :xs="24")
+          el-col(:sm="12", :xs="24")
             i.fa.fa-tablet.badge
             .header {{$t("service.shuhelper.header")}}
             .text.
               {{$t("service.shuhelper.text")}}
             .more
               a(href="https://www.shuhelper.cn/") {{$t("service.shuhelper.more")}}
-          el-col(:sm="8", :xs="24")
-            i.fa.fa-database.badge
-            .header {{$t("service.mirrorstation.header")}}
-            .text.
-              {{$t("service.mirrorstation.text")}}
-            .more
-              a(href="https://mirrors.shu.edu.cn/") {{$t("service.mirrorstation.more")}}
-          el-col(:sm="8", :xs="24")
+          el-col(:sm="12", :xs="24")
             i.fa.fa-flask.badge
             .header {{$t("service.lab.header")}}
-            //- .text #[a(href="http://bbs.shuosc.org") 社区论坛]
-            //.text #[a(href="https://git.shuosc.org") {{$t("service.lab.git")}}]
-            //- .text #[a(href="https://g6.shuosc.org") 搜索反向代理]
-            .text #[a(href="https://shuer.link") SHUER.LINK]
             .text #[a(href="https://github.com/shuosc/anti-captcha.shuosc.org") {{$t("service.lab.anticaptcha")}}]
-            .text #[a(href="https://mirrors.shu.edu.cn/help/dns.html") DNS]
-            .text #[a(href="https://mirrors.shu.edu.cn/help/docker.html") Docker Hub加速]
-            .text #[a(href="https://mirrors.shu.edu.cn/shuhelper") 上大助手校内镜像]
+            .text #[a(href="https://cloud.shuosc.com/shuhelper/#/") 上大助手]
     section
       .container.member
         .title.text-center {{$t("members.title")}}
@@ -115,20 +100,17 @@
             img(width="250", height="54",src="./assets/images/geekpie-logo.png")
           a(href="https://lug.ustc.edu.cn")
             img(height="75",src="./assets/images/lug-ustc-logo.png")
-          a(href="https://soscon.top")
+          a(href="https://sosconf.org")
             img(height="120",src="./assets/images/soscon-logo.png")
     section.joinus
       .container.text-center
         .title {{$t("joinus.title")}}
         .hr.element-center
         .text {{$t("joinus.text")}}
-        //- .text 17级QQ群：146685225 （推荐新同学加入）
-        .text {{$t("joinus.qqgroup")}}：24061199 （{{$t("joinus.addgrouprequire")}}）
         .text
           a(href="https://t.me/joinchat/ErK1eQ6s9-axpVr75Oiwww") #[i.fa.fa-telegram] Telegram
         .text.wechat {{$t("joinus.wechat")}}
         img(src="./assets/images/wx-qrcode.png")
-        .text {{$t("joinus.info")}}#[a(href="https://osc.shu.edu.cn/wiki/about") {{$t("joinus.see")}}]
         .text {{$t("joinus.question")}}#[a(href="mailto:contact@shuosc.org") {{$t("joinus.contract")}}]
     footer
       .text= `©${new Date().getFullYear()} SHU Open Source Community`

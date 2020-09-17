@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0b612315-bdc2-4334-b264-46f4b991f95c/deploy-status)](https://app.netlify.com/sites/shuosc/deploys)
 
-# osc.shu.edu.cn
+# Homepage
 
 > Shanghai University Open Source Community Landing Page
 
