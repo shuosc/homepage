@@ -1,4 +1,4 @@
-FROM node:14.15-alpine as builder
+FROM node:14.21-alpine as builder
 COPY . /homepage
 WORKDIR /homepage
 RUN yarn && yarn build
